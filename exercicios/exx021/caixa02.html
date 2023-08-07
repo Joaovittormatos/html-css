@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: rgba(43, 36, 36, 0.288);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            text-align: center;
+            box-shadow: 2px 2px 6px black;
+        }
+
+        nav{
+            display: block;
+            width: 30px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            background-color: rgba(177, 180, 176, 0.705);
+            width: 30px
+        }
+
+        main{
+            background-color: rgba(181, 216, 27, 0.774);
+            padding: 5px 5px 5px 10px;
+            width: 600px;
+            margin: 30px auto 10px auto;
+            border: 10px solid greenyellow;
+            border-radius: 20px;
+        }
+
+        main > h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 13px;
+            margin-top: 12px;
+        }
+
+        footer{
+            margin: 150px 0px;
+        }
+
+        main > section#opinioes {
+            font-family: 'Courier New', Courier, monospace;
+            margin-left: 27px
+        }
+
+        main > article > h1#op{
+            margin-top: 23px;
+            margin-bottom: 30px;
+        }
+
+        nav > a:hover{
+            color: red;
+        }
+
+        div#bola{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+
+        div span{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Noticias RDM</h1>
+    </header>
+    <nav>
+        <a href="#">Link</a> <a href="#">Link</a> <a href="#">Link</a>
+    </nav>
+    <main>
+        <h1>Big noticies</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Asperiores, dolorem aut est sapiente officiis non numquam earum id, adipisci repellendus possimus, 
+            modi reiciendis officia molestiae blanditiis dolore obcaecati? Quas, aperiam!</p>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus dolores nihil recusandae quos, cum voluptates, 
+                provident earum tempore temporibus rerum magnam odit repellendus. 
+                Et repellat suscipit voluptas perferendis ea.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat ullam obcaecati, 
+                dolorem enim perferendis odio praesentium, 
+                nisi sed omnis et ipsum aspernatur dolor laboriosam quisquam voluptate, asperiores sunt tenetur.</p>
+            <h1 id="op">Opiniões</h1>
+        </article>
+        <section id="opinioes">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quo magni quas minima nisi omnis quis 
+                labore sit nihil aspernatur repudiandae consectetur corporis molestias nostrum, 
+                voluptatum qui quidem ea non.</p>
+
+        </section>
+    </main>
+    <footer>
+        Esse site é feito por João Vittor
+    </footer>
+    <div id="bola">
+        <br>
+        <br>
+        <span>   bola</span>
+    </div>
+
+</body>
+</html>
