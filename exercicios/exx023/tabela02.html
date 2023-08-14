@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela, ainda</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+            padding: 3px;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        .numero{
+            text-align: right;
+        }
+
+        tfoot {
+            background-color: gray;
+        }
+
+        tfoot > tr > td {
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+</body>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">44 420 459</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 000 000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 000 000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td class="numero">0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</html>
