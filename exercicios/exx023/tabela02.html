@@ -13,6 +13,7 @@
             width: 500px;
             border: 1px solid black;
             border-collapse: collapse;
+            position: relative;
         }
 
         thead {
@@ -42,16 +43,45 @@
             color: white;
             padding: 5px;
         }
+
+        tfoot > tr > th {
+            color: white;
+        }
+
+        caption {
+            font-size: 1.3em;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        tbody > tr > td {
+            padding: 7px;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
 </body>
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope= "col"style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -74,9 +104,10 @@
         </tbody>
         <tfoot>
             <tr>
-                <td><strong>Total</strong></td>
+                <th scope="row"><strong>Total</strong></th>
                 <td class="numero">0000</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi odio, praesentium est officiis exercitationem numquam cum aliquid consectetur? Nulla, temporibus quam ad est repellat enim quasi odio reprehenderit iusto dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eveniet quis nesciunt qui sit tenetur doloribus, labore similique, quos repellendus corrupti quasi harum? Eveniet eaque veritatis cum nostrum esse nemo! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus atque ipsum laboriosam suscipit quae quo! Eaque cupiditate ab, id magnam nihil rerum repellat tenetur in sit doloremque maxime voluptatem dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nulla maiores, odio, illo vel eius dolorem obcaecati dignissimos dolorum quibusdam nam libero laboriosam quae sunt. Praesentium dolore eius ducimus rem.</p>
 </html>
