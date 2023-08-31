@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="isats">Satisfaction: </label>
+            <input type="range" name="sats" id="isats" min="0" max="10" value="0" oninput="sat.innerHTML = Number(isats.value)">
+            <label for="isats" id="sat"></label>
+        </p>
+    </form>
+</body>
+</html>
