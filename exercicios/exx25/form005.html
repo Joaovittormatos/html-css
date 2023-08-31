@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        fieldset {
+            border: 5px solid red;
+            width: 105px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario checkbox e Radio</h1>
+    <form action="cadastro.php" method="get">
+        <legend>Sexo</legend>
+        <fieldset>
+            <input type="radio" name="sexo" id="iman" value="M"> <label for="iman">Masculino</label> <br>
+            <input type="radio" name="sexo" id="ifem" value="F"> <label for="ifem">Feminino</label>
+        </fieldset>
+        <br>
+        <legend>Esportes Favoritos</legend>
+        <fieldset id="espor">
+            <input type="checkbox" name="baska" id="ibaska"> <label for="ibaska">Basquete</label> <br>
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="boxe" id="iboxe"> <label for="iboxe">Boxe</label> <br>
+            <input type="checkbox" name="tenis" id="itenis"> <label for="itenis">Tenis</label> <br>
+            <input type="checkbox" name="cor" id="icor"> <label for="icor">Corrida</label> <br>
+            <input type="checkbox" name="nata" id="inata"> <label for="inata">Natação</label> <br>
+            <input type="checkbox" name="musc" id="imusc"> <label for="imusc">Musculação</label> <br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
